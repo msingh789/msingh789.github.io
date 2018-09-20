@@ -3,44 +3,124 @@
 <head>
   <style>
     
-    .dropbtn {
-      background-color; black;
-      color: white;
-      padding: #px;
-      font-size: #px;
-      border: none;
+   .menu{
+    border:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
     }
-    .dropdown {
-      position: relative;
-      display: inline-block;
+.menu ul{
+    background:#F93;
+    height:50px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
+    -moz-box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
+    box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
     }
-    .dropdown-content{
-      display: none;
-      position: absolute;
-      background-color: lightgrey;
-      min-width: #px;
-      z-index: 1;
-    }
-    .dropdown-content a {
-      color: black;
-      padding: #px #px;
-      text-decoration: none;
-      display: block;
-    }
-    
-    .dropdown-content a:hover {background-color: white;}
-    .dropdown:hover .dropdown-content {display: block;}
-    .dropdown:hover .dropbtn {background-color: grey;}
+    .menu li{
+        float:left;
+        padding:0px 0px 0px 15px; 
+        }
+    .menu li a{
+        color:#000;
+        display:block;
+        font-weight:normal;
+        line-height:50px;
+        margin:0px;
+        padding:0px 25px;
+        text-align:center;
+        text-decoration:none;
+        }
+    .menu li a:hover{
+        background:#C60;
+        color:#FFFFFF;
+        text-decoration:none;
+        -webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+        -moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+        box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+        }
+    .menu ul li:hover a{
+        background:#C60;
+        color:#FFFFFF;
+        text-decoration:none;
+        }
+    .menu li ul{
+        display:none;
+        height:auto;
+        padding:0px;
+        margin:0px;
+        border:0px;
+        position:absolute;
+        width:200px;
+        z-index:200;
+        }
+    .menu li:hover ul{
+        display:block;      
+        }
+    .menu li li {
+        display:block;
+        float:none;
+        margin:0px;
+        padding:0px;
+        width:200px;
+        background:#F93;
+        /*this is where the rounded corners for the dropdown disappears*/
+        }
+    .menu li:hover li a{
+        background:none;
+        }
+    .menu li ul a{
+        display:block;
+        height:50px;
+        font-size:12px;
+        font-style:normal;
+        margin:0px;
+        padding:0px 10px 0px 15px;
+        text-align:left;
+        }
+    .menu li ul a:hover, .menu li ul li:hover a{
+        border:0px;
+        color:#ffffff;
+        text-decoration:none;
+        background:#C60;
+        -webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+        -moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+        box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3); 
+        }   
     
   </style>
   </head>
   
-  <div class="dropdown">
-    <button class="dropbtn">SOCIAL MEDIA</button>
-    <div class="dropdown-content">
-      
-      <a href="www.linkedin.com/in/manjinder-singh-122aba158</a>
-               </div>
+<div class="menu">  
+   <ul>
+      <li><a href="#" >Home</a></li>
+      <li><a href="#" id="current">Fruit</a>
+         <ul>
+            <li><a href="#">Apples</a></li>
+            <li><a href="#">Oranges</a></li>
+            <li><a href="#">Bananas</a></li>
+            <li><a href="#">Pears</a></li>
+         </ul>
+      </li>
+      <li><a href="/about.html">About</a>
+         <ul>
+            <li><a href="#">Company Info</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">FAQ</a></li>
+         </ul>
+      </li>
+      <li><a href="/contact/contact.php">Contact Us</a></li>
+   </ul>
+</div>  
+              
                </div>
                </body>
                </html>
