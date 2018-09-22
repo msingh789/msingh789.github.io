@@ -1,128 +1,463 @@
-<html>
-  
+   <!DOCTYPE html>
+<html lang="en">
 <head>
-  <style>
-    
-   .menu{
-    border:none;
-    border:0px;
-    margin:0px;
-    padding:0px;
-    font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
-    font-size:14px;
-    font-weight:bold;
-    }
-.menu ul{
-    background:#F93;
-    height:50px;
-    list-style:none;
-    margin:0;
-    padding:0;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    -webkit-box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
-    -moz-box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
-    box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
-    }
-    .menu li{
-        float:left;
-        padding:0px 0px 0px 15px; 
-        }
-    .menu li a{
-        color:#000;
-        display:block;
-        font-weight:normal;
-        line-height:50px;
-        margin:0px;
-        padding:0px 25px;
-        text-align:center;
-        text-decoration:none;
-        }
-    .menu li a:hover{
-        background:#C60;
-        color:#0000ff;
-        text-decoration:none;
-        -webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
-        -moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
-        box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
-        }
-    .menu ul li:hover a{
-        background:#C60;
-        color:#FFFFFF;
-        text-decoration:none;
-        }
-    .menu li ul{
-        display:none;
-        height:auto;
-        padding:0px;
-        margin:0px;
-        border:0px;
-        position:absolute;
-        width:200px;
-        z-index:200;
-        }
-    .menu li:hover ul{
-        display:block;      
-        }
-    .menu li li {
-        display:block;
-        float:none;
-        margin:0px;
-        padding:0px;
-        width:200px;
-        background:#F93;
-        /*this is where the rounded corners for the dropdown disappears*/
-        }
-    .menu li:hover li a{
-        background:none;
-        }
-    .menu li ul a{
-        display:block;
-        height:50px;
-        font-size:12px;
-        font-style:normal;
-        margin:0px;
-        padding:0px 10px 0px 15px;
-        text-align:left;
-        }
-    .menu li ul a:hover, .menu li ul li:hover a{
-        border:0px;
-        color:#ffffff;
-        text-decoration:none;
-        background:#C60;
-        -webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
-        -moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
-        box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3); 
-        }   
-    
-  </style>
-  </head>
-  
-<div class="menu">  
-   <ul>
-      <li><a href="#" >Home</a></li>
-      <li><a href="#" id="current">Projects</a>
-         <ul>
-            <li><a href="#">MOOD-LAMP USING <br/> C++/ARDUINO</a></li>
-            <li><a href="#">MUSIC SYNCED HOLIDAY <br/> LIGHTS USING LINUX</a></li>
-            <li><a href="#">WEB DEVELOPMENT</a></li>
-            <li><a href="#">CISCO</a></li>
-         </ul>
-      </li>
-      <li><a href="/about.html">About</a>
-         <ul>
-            <li><a href="#">Company Info</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">FAQ</a></li>
-         </ul>
-      </li>
-      <li><a href="/contact/contact.php">Contact Us</a></li>
-   </ul>
-</div>  
-              
-               </div>
-               </body>
-               </html>
-               
-     
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Manjinder Singh Portfolio</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/elements.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/entypo-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/hover-min.css">
+  <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+  <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+  <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+
+
+  <link rel="shortcut icon" href="images/favicon.png"/>
+</head>
+<body style="background: #0031cf">
+  <div id="fullpage">
+    <div class="section">
+      <button class="moveDown"><span class="alt-font-primary arrow-title">Discover me</span></button>
+      <div class="header">
+        <nav class="navbar yamm navbar-light">
+          <a class="navbar-brand" href="index.html"><img alt="" title="" src="images/logo.svg" width="30">Arshdeep Singh</a>
+          <button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#mainNav">
+            &#9776;
+          </button>
+          <div class="collapse navbar-toggleable-xs navbar-static-top" id="mainNav">
+            <ul class="nav navbar-nav pull-right">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactme">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.pdf" download> View Resume</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container-wrap wow fadeIn" data-wow-duration="1s">
+        <div id="main-slider-2_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="photography1" style="background-color:transparent;padding:0px;box-shadow: 2px 40px 70px rgba(0, 0, 0, 0.40), 0px 0px 1px rgba(0, 0, 0, 0.40); border-radius: 1rem ">
+          <div id="main-slider-2" class="rev_slider" style="display:none;" data-version="5.0.7">
+            <ul>
+              <li data-index="rs-171" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-rotate="0" data-saveperformance="off">
+                <img alt="" title="" src="images/freelancer/3.jpg" data-bgposition="right center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-duration="30000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
+                <h6 class="tp-caption text-grey text-shadow" id="slide-171-layer-1" data-x="['center','center','center','center']" data-hoffset="['40','40','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-100','-100','-100','-100']" data-fontsize="['15','15','15','15']" data-lineheight="['18','18','18','18']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 5; white-space: nowrap;">Full Stack Developer
+                </h6>
+
+                <h2 class="tp-caption text-white text-shadow" id="slide-171-layer-2" data-x="['center','center','center','center']" data-hoffset="['120','120','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['40','40','40','0']" data-fontsize="['130','130','90','90']" data-lineheight="['130','130','90','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 5; white-space: nowrap;"><em>Arshdeep </em><br> ― Singh
+                </h2>
+              </li>
+            </ul>
+            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="aboutme">
+      <div class="container-wrap wow fadeIn" data-wow-duration="1s" >
+        <div class="container-wrap-background vertical-center round-container">
+          <button class="moveUp"><span class="alt-font-primary arrow-title">Go to top</span></button>
+          <button class="moveDown"><span class="alt-font-primary arrow-title">Services</span></button>
+          <div class="wow fadeIn container text-center" data-wow-delay=".8s">
+            <h1 class=" text-center">About Me</h1>
+            <hr>
+            <h2 class="section-title margin-30"><img src="images/freelancer/arsh.jpg"  width= "200" height="200" alt=""></h2>
+              <h4>    <a class="nav-link" href="resume.pdf" download> View Resume</a></h4>
+              <hr>
+            <p class="lead">I am a Full Stack Developer who is a fast learner, a hardworking individual and a team player with a creative mind set for problem solving. A developer that does not back down from any challenge that is put forward. My superior focus and attention to detail combined with my knowledge of HTML5, CSS, Javascript, Ruby, Ruby on Rails, jQuery, SQLite/PostgreSQL makes me an ideal team member. I am able to prioritize the ability to adapt and address challenges quickly and creatively.
+              <div class="row">
+                <div class="col-xs-12 col-md-6"></div>
+                <div class="col-xs-12 col-md-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="services">
+        <div class="container-wrap wow fadeIn" data-wow-duration="1s">
+          <div class="container-wrap-background vertical-center round-container" style="background: url(images/events/bg-5.jpg) center center; background-size: cover">
+            <button class="moveUp"><span class="alt-font-primary arrow-title">About Me</span></button>
+            <button class="moveDown"><span class="alt-font-primary arrow-title">Experience</span></button>
+            <div class="wow fadeIn container" data-wow-delay=".6s">
+              <h6 class="text-grey text-center">Services</h6>
+              <h2 class="text-center section-title">What I can offer</h2>
+              <p class="lead text-center margin-30 col-xs-12 col-md-offset-2 col-md-8">The different skill sets I can bring to your company</p>
+              <div class="row" style="margin-bottom: 3rem">
+                <div class="col-xs-12 col-md-6">
+                  <div class="row">
+                    <div class="col-xs-4 col-md-3"><span class="icon-screen-desktop icon-circle icon-border icon-secondary"></span></div>
+                    <div class="col-xs-8 col-md-9">
+                      <h4>Languages & Frameworks</h4>
+                      <p> <ul>
+                        <li>Ruby, Ruby on Rails, React</li>
+                        <li>Javascript, jQuery, Ajax</li>
+                        <li>HTML5, CSS3, SCSS3</li>
+                      </ul>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div class="row">
+                    <div class="col-xs-4 col-md-3"><span class="icon-notebook icon-circle icon-border icon-secondary"></span></div>
+                    <div class="col-xs-8 col-md-9">
+                      <h4>Methodologies</h4>
+                      <p> <ul>
+                        <li>Object Oriented Development </li>
+                        <li>Test Driven Development </li>
+                        <li> Agile Development</li>
+                      </ul>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+
+                <div class="col-xs-12 col-md-6">
+                  <div class="row">
+                    <div class="col-xs-4 col-md-3"><span class="icon-magnifier icon-circle icon-border icon-secondary"></span></div>
+                    <div class="col-xs-8 col-md-9">
+                      <h4>DB, Testing & Version Control</h4>
+                      <p> <ul>
+                        <li>PostgreSQL, SQLite3, ActiveRecord </li>
+                        <li>RSpec</li>
+                        <li> Git & Github</li>
+                      </ul>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="projects">
+        <div class="container-wrap wow fadeIn" data-wow-duration="1s">
+          <div class="container-wrap-background vertical-center round-container">
+            <button class="moveUp"><span class="alt-font-primary arrow-title">Services</span></button>
+            <button class="moveDown"><span class="alt-font-primary arrow-title">Education</span></button>
+            <div class="container-fluid">
+              <div class="row">
+                <h6 class="text-grey text-center">Services</h6>
+                <h2 class="display-2 text-center">Projects</h2>
+                <p class="lead text-center margin-30">Here's some of my favorite projects that I've created</p>
+
+                <div class="grid" data-type="masonry" data-layout="masonry" data-lg="1000" data-md="800" data-sm="600">
+                  <div class="grid-sizer"></div>
+                  <div class="grid-item print graphic wow zoomIn" data-wow-duration="3s">
+                    <a href="images/agency/om.png" data-lightbox="gallery" data-title="Omfoundation">
+                      <div class="image-overlay">
+                        <div class="image-overlay-content">
+                          <h5>Omfoundation</h5></div>
+                        </div>
+                      </a>
+                      <img alt="" title="" src="images/agency/om.png">
+                    </div>
+                      <div class="grid-item ui ux web wow zoomIn" data-wow-duration="2s">
+                        <a href="images/agency/hunter.png" data-lightbox="gallery" data-title="Hunter Web Coding School">
+                          <div class="image-overlay">
+                            <div class="image-overlay-content">
+                              <h5>Hunter Web Coding School</h5></div>
+                            </div>
+                          </a>
+                          <img alt="" title="" src="images/agency/hunter.png">
+                        </div>
+                        <div class="grid-item ui ux web wow zoomIn" data-wow-duration="2s">
+                          <a href="images/agency/battle-me.png" data-lightbox="gallery" data-title="Battle Me">
+                            <div class="image-overlay">
+                              <div class="image-overlay-content">
+                                <h5>Battle Me</h5></div>
+                              </div>
+                            </a>
+                            <img alt="" title="" src="images/agency/battle-me.png">
+                          </div>
+                          <div class="grid-item ui ux web wow zoomIn" data-wow-duration="2s">
+                            <a href="images/agency/lava-typer.png" data-lightbox="gallery" data-title="Lava typers">
+                              <div class="image-overlay">
+                                <div class="image-overlay-content">
+                                  <h5>Lava Typers</h5></div>
+                                </div>
+                              </a>
+                              <img alt="" title="" src="images/agency/lava-typer.png">
+                            </div>
+
+                            <div class="grid-item ui ux web wow zoomIn" data-wow-duration="2s">
+                              <a href="images/agency/ashopper.png" data-lightbox="gallery" data-title="Ashopper">
+                                <div class="image-overlay">
+                                  <div class="image-overlay-content">
+                                    <h5>Ashopper</h5></div>
+                                  </div>
+                                </a>
+                                <img alt="" title="" src="images/agency/ashopper.png">
+                              </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section">
+              <div class="container-wrap wow fadeIn" data-wow-duration="1s">
+                <div class="container-wrap-background vertical-center round-container" >
+                  <button class="moveUp"><span class="alt-font-primary arrow-title">Projects</span></button>
+                  <button class="moveDown"><span class="alt-font-primary arrow-title">Experience</span></button>
+                  <div class="wow fadeIn container">
+                    <div class="row">
+                      <h6 class="text-grey text-center">Arshdeep Singh's</h6>
+                      <h2 class="section-title text-center"> Education</h2>
+                      <p class="lead text-center margin-60">
+                        <div class="col-xs-12 col-md-12">
+                          <div class="row">
+                            <div class="col-xs-8 col-md-9">
+                              <h4>Dev Bootcamp (2016)</h4>
+                            <h7 class="text-grey">Full Stack Developer</h7>
+                              <p>
+                            Dev Bootcamp is an intensive program where I spent 24 weeks learning the fundamental foundation of the advance topics in web development such as Ruby, Ruby on Rails, Javascript, HTML5, CSS3, SCSS, JQuery. 12 weeks were spent remote with the help of an online instructor and then 12 weeks onsite in the NYC location.
+                            </p>
+                            </div>
+                            <div class="col-xs-8 col-md-9">
+                              <h4>SUNY Old Westbury</h4>
+                            <h7 class="text-grey"> BS - Biology</h7>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="section">
+              <div class="container-wrap wow fadeIn" data-wow-duration="1s">
+                <div class="container-wrap-background vertical-center round-container" style="background: url(images/freelancer/bg-1.jpg) center center; background-size: cover">
+                  <button class="moveUp"><span class="alt-font-primary arrow-title">Education</span></button>
+                  <button class="moveDown"><span class="alt-font-primary arrow-title">Platforms</span></button>
+                  <div class="wow fadeIn container">
+                    <div class="row">
+                      <h6 class="text-grey text-center">Arshdeep Singh's</h6>
+                      <h2 class="section-title text-center"> Work Experience</h2>
+                      <p class="lead text-center margin-60">
+                        I have been a Full Stack Developer for About 2 years.</p>
+                        <div class="col-xs-12 col-md-12">
+                          <div class="row">
+                            <div class="col-xs-8 col-md-9">
+                              <h4>Aarnav - (April 2018 - Current)</h4>
+                            <h7 class="text-grey">Full Stack Developer</h7>
+                              <p>
+                                <ul>
+                                <li> Maintain and update company website</li>
+                                <li>    Maintain and update blockchain based web apps that invest in mining crypto</li>
+                                <li>   Responsible for implementing bug xes and new features based on end-user feedback</li>
+                                <li>  Produce an optimal website design and layout by working closely with the COO</li>
+                                <li>      Communicate and collaborate with developers out of state</li>
+                              </ul>
+                            </p>
+                            </div>
+                            <div class="col-xs-8 col-md-9">
+                              <h4>Freelance Web Developer/Designer - (March 2017  - Current)</h4>
+                            <h7 class="text-grey"> Web Developer/Designer</h7>
+                              <p>
+                                <ul>
+                                  <li> Creating Web Sites for clients using HTML, CSS, Javascript, Ruby on Rails, jQuery.</li>
+                                  <li>Used the latest features of bootstrap for a clean UX experience</li>
+                                  <li>Managed client relationships, and finances and created timeline for projects</li>
+                              </ul>
+                            </p>
+                            </div>
+                            <div class="col-xs-8 col-md-9">
+                              <h4>Eemobilemarketing - (January 2017 - April 2018)</h4>
+                            <h7 class="text-grey">Full Stack Developer</h7>
+                              <p>
+                                <ul>
+                                  <li>Designed and Developed Server-Side logic for Ruby on Rails Applications</li>
+                                  <li>Designed PostgresSQL database architecture</li>
+                                  <li> Responsible for implementing bug fixes and new features based on end-user feedback</li>
+                                  <li> Used the latest features of bootstrap for a clean UX experience</li>
+                                  <li>Managed client relationships, and finances</li>
+                              </ul>
+                            </p>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section">
+                <div class="container-wrap wow fadeIn" data-wow-duration="1s">
+                  <div class="container-wrap-background vertical-center round-container">
+                    <button class="moveUp"><span class="alt-font-primary arrow-title">Experience</span></button>
+                    <button class="moveDown"><span class="alt-font-primary arrow-title">Contact Me</span></button>
+                    <div class="wow fadeIn container grey-image" style="width: 70%" data-wow-delay=".6s">
+                      <h2 class="section-title text-center">I've Worked With </h2>
+                      <div class="row text-center">
+
+
+                        <div class="col-sm-3 grid-brands" style="border-width: 0 1px 1px 0">
+                          <img alt="" title="" src="images/brands/codepen.png" class="img-responsive center-block">
+                        </div>
+
+                        <div class="col-sm-3 grid-brands" style="border-width: 0 1px 0 0">
+                          <img alt="" title="" src="images/brands/html.png" class="img-responsive center-block">
+                        </div>
+                        <div class="col-sm-3 grid-brands" style="border-width: 0 0 0 0">
+                          <img alt="" title="" src="images/brands/github.png" class="img-responsive center-block">
+                        </div>
+                        <div class="col-sm-3 grid-brands" style="border-width: 0 1px 0 0">
+                          <img alt="" title="" src="images/brands/atom.png" class="img-responsive center-block">
+                        </div>
+                        <div class="col-sm-3 grid-brands" style="border-width: 0 1px 0 0">
+                          <img alt="" title="" src="images/brands/sublime.png" class="img-responsive center-block">
+                        </div>
+                        <div class="col-sm-3 grid-brands" style="border-width: 0 1px 1px 0">
+                          <img alt="" title="" src="images/brands/sketch.png" class="img-responsive center-block">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+                <!-- <div class="section">
+                  <div class="container-wrap wow fadeIn" data-wow-duration="1s">
+                    <div class="container-wrap-background vertical-center round-container" style="background: url(images/events/bg-6.jpg) center left; background-size: cover">
+                      <button class="moveUp"><span class="alt-font-primary arrow-title">Platforms</span></button>
+                      <button class="moveDown"><span class="alt-font-primary arrow-title">Social Media</span></button>
+                      <div class="wow fadeIn container" style="width: 70%" data-wow-delay=".6s">
+                        <h3 class=" text-center">Contact Me</h3>
+                        <hr>
+                        <h4 class=" text-center margin-60">Email: singh_arsy@yahoo.com</h4>
+                        <form>
+                          <fieldset class="form-group">
+                            <input type="text" class="form-control focus input" data-label="Name" id="name" placeholder="Name">
+                          </fieldset>
+                          <fieldset class="form-group">
+                            <input type="text" class="form-control focus input" data-label="Email" id="email" placeholder="Email">
+                          </fieldset>
+                          <fieldset class="form-group">
+                            <input type="text" class="form-control focus input" data-label="Phone Number" id="phone-number" placeholder="Phone Number">
+                          </fieldset>
+                          <fieldset class="form-group">
+                            <textarea class="form-control focus input" data-label="Message" id="message" placeholder="Message" style="resize:none" name="name" cols="6" rows="6"></textarea>
+                          </fieldset>
+                          <button type="submit" class="btn btn-primary pull-right hvr-sweep-to-right">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+
+
+                <div class="section" id="contactme">
+                  <div class="container-wrap wow fadeIn" data-wow-duration="1s">
+                    <div class="container-wrap-background vertical-center">
+                      <button class="moveUp"><span class="alt-font-primary arrow-title">Platforms</span></button>
+                      <div class="container-fluid wow fadeIn" data-wow-delay=".6s">
+                        <div class="row margin-60">
+
+                          <h2 class="section-title text-center margin-60">Follow Me </h2>
+                          <h6 class=" text-center">Email: singh_arsy@yahoo.com</h6>
+                          <hr>
+                          <div class="col-xs-6 col-md-2">
+                            <a class="social-media-1 hvr-underline-reveal" href="https://github.com/arsy209" title="">
+                              <i class="icon-entypo-github"></i> Github
+                            </a>
+                          </div>
+
+                          <div class="col-xs-6 col-md-2">
+                            <a class="social-media-1 hvr-underline-reveal" href="mailto:singh_arsy@yahoo.com" title="">
+                              <i class="icon-entypo-mail"></i> Email
+                            </a>
+                          </div>
+
+                          <div class="col-xs-6 col-md-2">
+                            <a class="social-media-1 hvr-underline-reveal" href="https://www.linkedin.com/in/arsy209/" title="">
+                              <i class="icon-entypo-linkedin"></i> Linkedin
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="copyright">Arshdeep Singh</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div id="parallax">
+            </div>
+
+
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.js"></script>
+    <script type="text/javascript" src="js/label.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript" src="js/packery-mode.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.youtubebackground.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="js/plugins.js"></script>
+  </body>
+</html>
